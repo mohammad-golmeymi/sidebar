@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.ctrBtn {
+  margin: 30px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+}
+.close::after {
+  content: "\002716 Close";
+}
+.open::after {
+  content: "\002630 Open";
+}
+.sidebar {
+  width: 0;
+  height: 100vh;
+  background-color: #222;
+  position: fixed;
+  top: 0;
+  right: 0;
+  transition: width 0.5s ease-in-out;
+}
+.sidebar h2 {
+  text-align: center;
+  color: #eee;
+  padding: 30px;
+}
+.show {
+  width: 250px;
+}
